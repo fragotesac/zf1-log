@@ -70,7 +70,6 @@ class Zend_Log_Filter_MessageTest extends PHPUnit\Framework\TestCase
 
     public function testFactoryWithConfig()
     {
-        require_once 'Zend/Config.php';
         $config = new Zend_Config(array('log' => array('memory' => array(
             'writerName'   => "Mock",
             'filterName'   => "Message",
